@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1051274397631",
+    "firebase_url": "https://gasolineapp-30b7e-default-rtdb.firebaseio.com",
+    "project_id": "gasolineapp-30b7e",
+    "storage_bucket": "gasolineapp-30b7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1051274397631:android:56ad276f56fb2a542e830a",
+        "android_client_info": {
+          "package_name": "com.example.gasolineprices"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1051274397631-0t24l794ildt3q43ar316n8vrq00mug2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHMIiz0ZKUvhDMTsZJ-1Sn0Wpke8Gv5go"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1051274397631-0t24l794ildt3q43ar316n8vrq00mug2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

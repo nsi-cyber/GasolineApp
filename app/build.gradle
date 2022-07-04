@@ -1,0 +1,93 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 33
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+    defaultConfig {
+        applicationId "com.example.gasolineprices"
+        minSdk 28
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+
+dependencies {
+
+    // Import the BoM for the Firebase platform
+
+
+    // Declare the dependency for the Realtime Database library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-database'
+    implementation platform('com.google.firebase:firebase-bom:30.2.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'net.sourceforge.htmlunit:htmlunit:2.14'
+        implementation 'com.google.code.gson:gson:2.9.0'
+    implementation platform('com.google.firebase:firebase-bom:30.1.0')
+
+    // Declare the dependency for the Firebase Authentication library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-auth'
+
+    // Also declare the dependency for the Google Play services library and specify its version
+    implementation 'com.google.android.gms:play-services-auth:20.2.0'
+
+    implementation "androidx.constraintlayout:constraintlayout:2.1.4"
+    implementation 'org.json:json:20220320'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'org.apache.httpcomponents:httpmime:4.3.6'
+    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.0.1'
+    implementation 'com.squareup.retrofit2:converter-jackson:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-moshi:2.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-protobuf:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-wire:2.1.0'
+    implementation "androidx.constraintlayout:constraintlayout:2.1.4"
+
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+
+    implementation 'com.konghq:unirest-java:3.11.09'
+
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+    implementation 'android.arch.navigation:navigation-fragment:1.0.0'
+    implementation 'android.arch.navigation:navigation-ui:1.0.0'
+    testImplementation 'junit:junit:4.+'
+
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

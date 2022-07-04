@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:id="@+id/fuel_card"
+    app:cardBackgroundColor="@color/koyumavi"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:id="@+id/fuel_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:paddingBottom="20dp">
+
+
+            <TextView
+                android:id="@+id/city_name"
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:gravity="center_vertical"
+                android:text="City"
+                android:textColor="@color/white"
+                android:textSize="13dp"></TextView>
+
+            <TextView
+                android:id="@+id/fuel_type"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="Type"
+                android:textSize="13dp"></TextView>
+
+            <TextView   android:textColor="@color/white"
+                android:id="@+id/brand"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="Brand"
+                android:textSize="13dp"></TextView>
+
+            <TextView   android:textColor="@color/white"
+                android:id="@+id/fuel_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="Price"
+                android:textSize="15dp"></TextView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/buyLay"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+
+                <TextView   android:textColor="@color/white"
+                    android:id="@+id/total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Total Price: "
+                    android:textSize="10dp" />
+
+
+                <TextView   android:textColor="@color/white"
+                    android:id="@+id/esPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1.5"
+                android:gravity="right">
+
+                <Button
+                    android:id="@+id/decButton"
+                    android:layout_width="46dp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"
+                    android:padding="0dp"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="9dp" />
+
+                <TextView   android:textColor="@color/white"
+                    android:id="@+id/esCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="1"
+                    android:textSize="10dp" />
+
+                <Button
+                    android:id="@+id/incButton"
+                    android:layout_width="46dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/white"
+                    android:padding="0dp"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:textSize="10dp" />
+
+                <Button
+                    android:id="@+id/addButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/white"
+                    android:padding="0dp"
+                    android:text="Add"
+                    android:textColor="@color/black"
+                    android:textSize="10dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

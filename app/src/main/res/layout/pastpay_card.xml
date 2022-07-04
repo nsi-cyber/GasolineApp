@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:id="@+id/payment_card"
+    app:cardBackgroundColor="@color/koyumavi"
+    app:cardCornerRadius="5dp"
+
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:id="@+id/payment_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:id="@+id/clickLay"
+            android:paddingBottom="20dp">
+
+
+            <TextView
+                android:id="@+id/payment_id"
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:gravity="center_vertical"
+                android:text="Payment Id"
+                android:textColor="@color/white"
+                android:textSize="13dp"></TextView>
+
+            <TextView   android:textColor="@color/white"
+                android:id="@+id/payment_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="Price"
+                android:textSize="15dp"></TextView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/payment_details"
+
+            android:layout_width="382dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+
+                <TextView
+                    android:id="@+id/payment_text"
+                    android:layout_width="362dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:singleLine="false"
+                    android:text="  asd\ndf \n dsaf \n "
+                    android:textColor="@color/white"
+
+                    android:textSize="10dp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
