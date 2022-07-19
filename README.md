@@ -37,4 +37,4 @@ I used
 collectapi, gson, retrofit,shared preferences, firebase auth and firebase database
 
 You can buy any fuel from any city in turkey. Recent payments can be shown. Cart is stored at firebase and local. Google and mail login is available.
-Java
+ Made with Java, made for android
